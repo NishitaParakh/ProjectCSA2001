@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-file = expenses.csv
+file = os.path.join(os.path.dirname(__file__), "expenses.csv")
 
 def init_file():
     if not os.path.exists(file):
