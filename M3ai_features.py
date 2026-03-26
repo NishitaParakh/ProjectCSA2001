@@ -30,7 +30,7 @@ def ai_suggestions(sum_total, cat_total, max_cat, max_val):
     
     #Pattern detection
     if "Food" in cat_total and "Travel" in cat_total:
-        if (cat_total["Food"] > cat_Total["Travel"]):
+        if (cat_total["Food"] > cat_total["Travel"]):
             print("You are spending more on Food than Travel")
         else:
             print("You are spending more on Travel than Food")
