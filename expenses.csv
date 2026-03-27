@@ -1,2 +1,5 @@
-,Amount,Category,Date
-0,200.0,FOOD,2026-03-27
+,Unnamed: 0.2,Unnamed: 0.1,Unnamed: 0,Amount,Category,Date
+0,0.0,0.0,0.0,200.0,FOOD,2026-03-27
+1,1.0,1.0,,200.0,FOOD,2026-03-27
+2,2.0,,,4000.0,EDUCATION,2026-03-27
+3,,,,300.0,TRAVEL,2026-03-27
