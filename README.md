@@ -39,13 +39,13 @@ This project solves the problem by:
 ## **Project Structure:**
 
 Project folder contains-
-* main.py                         Main program
-* M1data_handler.py               Handles data storage (Module 1)
-* M2analysis_by_ai.py             Analysis + AI suggestions (Module 2)
-* M3time_analysis.py              Time-based analysis (Module 3)
-* M4ai_generated_report.py        Generates AI report (Module 4)
-* expenses.csv                    Data file(stores data as Amount,Category,Date)
-* README.md                       Project documentation
+* main.py                         #Main program
+* M1data_handler.py               #Handles data storage (Module 1)
+* M2analysis_by_ai.py             #Analysis + AI suggestions (Module 2)
+* M3time_analysis.py              #Time-based analysis (Module 3)
+* M4ai_generated_report.py        #Generates AI report (Module 4)
+* expenses.csv                    #Data file(stores data as Amount,Category,Date)
+* README.md                       #Project documentation
 
 --
 
