@@ -9,7 +9,7 @@ def init_file():
         df.to_csv(file, index = False)
 
 def add_expense(amount, category):
-    df = pd.read_csv(file)
+    df = df.read_csv(file)
     new_data = {"Amount" : amount, "Category" : category}
     df = pd.concat([df, pd.DataFrame([new_data])], ignore_index = False)
-    df = pd.to_csv(file)
+    df = df.to_csv(file)

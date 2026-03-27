@@ -4,7 +4,7 @@ import os
 file = os.path.join(os.path.dirname(__file__), "expenses.csv")
 
 def analyse_data():
-    df = pd.read_csv(file)
+    df = df.read_csv(file)
     sum_total = df(["amount"]).sum()
     cat_total = df.groupby("category")["amount"].sum()
 
