@@ -12,7 +12,7 @@ def analyse_data():
     print("Total Spending:", sum_total)
     print("Category-wise Spending:", cat_total)
 
-    for cat in cat_total:
+    for cat in cat_total.index:
         print(cat, ":", cat_total[cat])
     
     #Highest Category
@@ -36,7 +36,7 @@ def ai_suggestions(sum_total, cat_total, max_cat, max_val):
     if (sum_total < 2000):
         level = "Low"
         print("You are going great...")
-    elif (sum_total in (2000, 5000)):
+    elif (sum_total > 2000 and sum_total < 5000):
         level = "Medium"
         print("Good enough")
     else:
