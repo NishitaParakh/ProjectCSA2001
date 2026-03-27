@@ -1,8 +1,8 @@
 import pandas as pd
 
 def time_analyzer():
-    df = df.read_csv("expenses.csv")
-    df['date'] = df.to_datetime(df['date'])
+    df = pd.read_csv("expenses.csv")
+    df['date'] = pd.to_datetime(df['date'])
 
     print("\n---------DAILY SPENDING----------")
     daily_spend = df.groupby(df['date'].dt.date)['amount'].sum()

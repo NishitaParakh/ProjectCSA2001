@@ -1,7 +1,7 @@
 import pandas as pd
 def ai_report():
-    df = df.read_csv("expenses.csv")
-    df['date'] = df.to_datetime(df['date'])
+    df = pd.read_csv("expenses.csv")
+    df['date'] = pd.to_datetime(df['date'])
 
     total = df['amount'].sum()
     top_cat = df.groupby("category")['amount'].sum().idxmax()
