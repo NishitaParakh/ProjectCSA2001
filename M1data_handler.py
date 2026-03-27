@@ -16,5 +16,5 @@ def add_expense(amount, category):
         "Amount" : amount, 
         "Category" : category, 
         "Date" : date}
-    df = pd.concat([df, pd.DataFrame([new_data])], ignore_index = False)
+    df = df.concat([df, pd.DataFrame([new_data])], ignore_index = False)
     df = df.to_csv(file)

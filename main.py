@@ -9,23 +9,23 @@ print("-----------------------------------------------")
 print("---------- AI-BASED EXPENSE ANALYZER ----------")
 print("-----------------------------------------------")
 
-print("\n===========EXPENSE TRACKER MENU==============")
-print("1. Add Expense")
-print("2. View Analysis")
-print("3. View Time-based Analysis")
-print("4. View AI-generated Report")
-print("5. Exit")
-print("===============================================")
 
 choose = int(input("Enter choice(1/2/3/4/5): "))
 
 while True:
+    print("\n===========EXPENSE TRACKER MENU================")
+    print("1. Add Expense")
+    print("2. View Analysis")
+    print("3. View Time-based Analysis")
+    print("4. View AI-generated Report")
+    print("5. Exit")
+    print("===============================================")
     if (choose == 1):
         print("\n============== ADD EXPENSES =================")
         while True:
             amount = float(input("Enter Amount spended: "))
             category = input("Enter Category(Food/Travel/Other): ")
-            if (category == "Other"):
+            if (category.lower() == "other"):
                 category = input("Enter Category: ")
 
             add_expense(amount, category)

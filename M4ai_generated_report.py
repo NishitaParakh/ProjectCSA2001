@@ -1,7 +1,7 @@
 import pandas as pd
 def ai_report():
-    df = pd.read_csv("expenses.csv")
-    df['date'] = pd.to_datetime(df['date'])
+    df = df.read_csv("expenses.csv")
+    df['date'] = df.to_datetime(df['date'])
 
     total = df['amount'].sum()
     top_cat = df.groupby("category")['amount'].sum().idxmax()
@@ -19,7 +19,7 @@ def ai_report():
     print("*Total Spending: ", total)
     print("*Spent Highest on ", top_cat, ": ", max_spend)
     print("*Active days: ", days)
-    print("Spending daily on an average: ", round(avg_per_day), 2)
+    print("*Spending daily on an average: ", round(avg_per_day), 2)
 
     if avg_per_day > 500:
         print("HIGH spending pattern detected!!")
