@@ -16,10 +16,10 @@ def ai_report():
     
     print("\n    AI REPORT SUMMARY    ")
     print("---------------------------")
-    print("*Total Spending: ", total)
-    print("*Spent Highest on ", top_cat, ": ", max_spend)
-    print("*Active days: ", days)
-    print("*Spending daily on an average: ", round(avg_per_day, 2))
+    print("\n*Total Spending: ", total)
+    print("\n*Spent Highest on ", top_cat, ": ", max_spend)
+    print("\n*Active days: ", days)
+    print("\n*Spending daily on an average: ", round(avg_per_day, 2))
 
     if avg_per_day > 500:
         print("HIGH spending pattern detected!!")
