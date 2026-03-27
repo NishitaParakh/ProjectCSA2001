@@ -39,13 +39,14 @@ This project solves the problem by:
 ## **Project Structure:**
 
 Project folder contains-
-* main.py                         #Main program
-* M1data_handler.py               #Handles data storage (Module 1)
-* M2analysis_by_ai.py             #Analysis + AI suggestions (Module 2)
-* M3time_analysis.py              #Time-based analysis (Module 3)
-* M4ai_generated_report.py        #Generates AI report (Module 4)
-* expenses.csv                    #Data file(stores data as Amount,Category,Date)
-* README.md                       #Project documentation
+
+* main.py (Main program)
+* M1data_handler.py (Module 1 which handles data storage)
+* M2analysis_by_ai.py (Module 2 for Analysis + AI suggestions)
+* M3time_analysis.py (Module 3 for Time-based analysis)
+* M4ai_generated_report.py (Module 4 for AI report generation)
+* expenses.csv (Stores data in the form- Amount,Category,Date)
+* README.md (Project documentation)
 
 --
 
