@@ -25,31 +25,28 @@ def analyse_data():
 def ai_suggestions(sum_total, cat_total, max_cat, max_val):
 
     #Overspending warning
-    if (max_val > 2000):
+    if (max_val > 5000):
         print("You are spending too much on ", max_cat, "!!")
     
-    if (sum_total > 5000):
-        print("You are overspending!!")
-        print("Try to reduce your overall expenses")
-    
-    #Classification(Low/Medium/High)
-    if (sum_total < 2000):
-        level = "Low"
-        print("You are going great...")
-    elif (sum_total > 2000 and sum_total < 5000):
-        level = "Medium"
-        print("Good enough")
+    if (sum_total > 15000):
+        print("You are overspending!!....Try to reduce your overall expenses")
+
+    print("--------------------------------------------------")   
+    if sum_total < 2000:
+        level = "LOW"
+    elif 2000 <= sum_total <= 5000:
+        level = "MEDIUM"
     else:
-        level = "High"
-        print("You are spending TOO MUCH")
+        level = "HIGH!"
     
-    print("Spending Level:", level)
+    print("Spending level: ", level)
 
     #Simple Prediction
     count = len(cat_total)
     if (count > 0):
         avg = sum_total / count
         future_spend = avg * 30
+        print("----------------------------------------------")
         print("Estimated Monthly Spending:", int(future_spend))
     
     #Pattern detection
