@@ -89,9 +89,13 @@ python main.py
 ## **Expected Output**:
 
 -> Total Spending
+
 -> Category-wise Spending
+
 -> Highest Spending Category
+
 -> Daily / Weekday / Monthly Spending
+
 -> AI suggestions and warnings
 
 --
@@ -111,6 +115,7 @@ python main.py
 * Working with CSV data using pandas
 * Applying basic AI/ML concepts.
 * Writing modular Python code.
+
 --
 
 
