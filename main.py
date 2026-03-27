@@ -25,7 +25,8 @@ while True:
             category = input("Enter Category(Food/Travel/Other): ")
             if (category.lower() == "other"):
                 category = input("Enter Category: ")
-
+            
+            category = category.upper()
             add_expense(amount, category)
             print("Expense added!")
 
