@@ -6,7 +6,7 @@ file = os.path.join(os.path.dirname(__file__), "expenses.csv")
 
 def init_file():
     if not os.path.exists(file):
-        df = pd.DataFrame(columns = ["Amount", "category"])
+        df = pd.DataFrame(columns = ["Amount", "category", "date"])
         df.to_csv(file, index = False)
 
 def add_expense(amount, category):
