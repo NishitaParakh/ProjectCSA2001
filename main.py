@@ -1,6 +1,6 @@
 from M1data_handler import init_file, add_expense
-from M2analysis import analyse_data
-from M3ai_features import ai_suggestions
+from M2analysis_by_ai import analyse_data, ai_suggestions
+from M3time_analysis import time_analyzer
 
 init_file()
 

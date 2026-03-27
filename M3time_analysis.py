@@ -1,6 +1,6 @@
 import pandas as pd
 
-def time_analysis():
+def time_analyzer():
     df = pd.read_csv("expenses.csv")
     df['date'] = pd.to_datetime(df['date'])
 
