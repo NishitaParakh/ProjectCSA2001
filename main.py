@@ -21,7 +21,7 @@ while True:
     if (choose == 1):
         print("\n============== ADD EXPENSES =================")
         while True:
-            amount = float(input("Enter Amount spended: "))
+            amount = float(input("Enter Amount spent: "))
             category = input("Enter Category(Food/Travel/Other): ")
             if (category.lower() == "other"):
                 category = input("Enter Category: ")
