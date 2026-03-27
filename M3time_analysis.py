@@ -2,18 +2,18 @@ import pandas as pd
 
 def time_analyzer():
     df = pd.read_csv("expenses.csv")
-    df['date'] = pd.to_datetime(df['date'])
+    df['Date'] = pd.to_datetime(df['Date'])
 
     print("\n---------DAILY SPENDING----------")
-    daily_spend = df.groupby(df['date'].dt.date)['amount'].sum()
+    daily_spend = df.groupby(df['Date'].dt.date)['Amount'].sum()
     print(daily_spend)
 
     print("\n---------WEEK-DAY SPENDING----------")
-    weekday_spend = df.groupby(df['date'].dt.day_name)['amount'].sum()
+    weekday_spend = df.groupby(df['Date'].dt.day_name)['Amount'].sum()
     print(weekday_spend)
 
     print("\n---------MONTHLY SPENDING----------")
-    monthly_spend = df.groupby(df['date'].dt.month)['amount'].sum()
+    monthly_spend = df.groupby(df['Date'].dt.month)['Amount'].sum()
     print(monthly_spend)
 
     
