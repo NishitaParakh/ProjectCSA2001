@@ -9,7 +9,7 @@ def time_analyzer():
     print(daily_spend)
 
     print("\n---------WEEK-DAY SPENDING----------")
-    weekday_spend = df.groupby(df['Date'].dt.day_name)['Amount'].sum()
+    weekday_spend = df.groupby(df['Date'].dt.day_name())['Amount'].sum()
     print(weekday_spend)
 
     print("\n---------MONTHLY SPENDING----------")

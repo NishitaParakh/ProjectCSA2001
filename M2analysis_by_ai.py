@@ -26,12 +26,12 @@ def ai_suggestions(sum_total, cat_total, max_cat, max_val):
 
     #Overspending warning
     if (max_val > 5000):
-        print("You are spending too much on ", max_cat, "!!")
+        print("You are spending too much on", max_cat, "..")
     
     if (sum_total > 15000):
         print("You are overspending!!....Try to reduce your overall expenses")
 
-    print("--------------------------------------------------")   
+    print("----------------------------------------------")   
     if sum_total < 2000:
         level = "LOW"
     elif 2000 <= sum_total <= 5000:
