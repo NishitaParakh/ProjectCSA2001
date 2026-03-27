@@ -9,9 +9,6 @@ print("-----------------------------------------------")
 print("---------- AI-BASED EXPENSE ANALYZER ----------")
 print("-----------------------------------------------")
 
-
-choose = int(input("Enter choice(1/2/3/4/5): "))
-
 while True:
     print("\n===========EXPENSE TRACKER MENU================")
     print("1. Add Expense")
@@ -19,7 +16,8 @@ while True:
     print("3. View Time-based Analysis")
     print("4. View AI-generated Report")
     print("5. Exit")
-    print("===============================================")
+    print("=================================================")
+    choose = int(input("Enter choice(1/2/3/4/5): "))
     if (choose == 1):
         print("\n============== ADD EXPENSES =================")
         while True:

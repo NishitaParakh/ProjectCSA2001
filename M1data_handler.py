@@ -10,7 +10,7 @@ def init_file():
         df.to_csv(file, index = False)
 
 def add_expense(amount, category):
-    df = df.read_csv(file)
+    df = pd.read_csv(file)
     date = datetime.now().strftime("%Y:%m:%d")
     new_data = {
         "Amount" : amount, 
