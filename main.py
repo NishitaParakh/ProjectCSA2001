@@ -1,6 +1,7 @@
 from M1data_handler import init_file, add_expense
 from M2analysis_by_ai import analyse_data, ai_suggestions
 from M3time_analysis import time_analyzer
+from M4ai_generated_report import ai_report
 
 init_file()
 
@@ -11,9 +12,12 @@ print("-----------------------------------------------")
 print("\n===========EXPENSE TRACKER MENU==============")
 print("1. Add Expense")
 print("2. View Analysis")
-print("3. Exit")
+print("3. View Time-based Analysis")
+print("4. View AI-generated Report")
+print("5. Exit")
+print("===============================================")
 
-choose = int(input("Enter choice(1/2/3): "))
+choose = int(input("Enter choice(1/2/3/4/5): "))
 
 while True:
     if (choose == 1):
@@ -30,23 +34,22 @@ while True:
             choice = input("Add another(Y/N): ")
             if (choice.lower() == "n"):
                 break
-
     elif (choose == 2):
         print("\n=============== ANALYSIS ===================")
         sum_total, cat_total, max_cat, max_val = analyse_data()
         ai_suggestions(sum_total, cat_total, max_cat, max_val)
-
     elif (choose == 3):
+        time_analyzer()
+    elif (choose == 4):
+        ai_report()
+    elif (choose == 5):
         print("Thank You!.....Have a nice day!")
         print("---------Exiting program---------")
         break
     else:
-        print("Invalid choice... Enter again")
-    c1 = input("Do you want to run again?(Y/N): ")
-    if (c1.lower() == "n"):
-        break
-if (choose == 1 or choose == 2):
-    print("========== AI REPORT===========")
+        print("Invalid... Enter choice again..")
+
+
     
 
 

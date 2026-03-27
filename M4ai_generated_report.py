@@ -14,8 +14,8 @@ def ai_report():
     else:
         avg_per_day = 0
     
-    print("\n AI REPORT SUMMARY ")
-    print("---------------------")
+    print("\n    AI REPORT SUMMARY    ")
+    print("---------------------------")
     print("*Total Spending: ", total)
     print("*Spent Highest on ", top_cat, ": ", max_spend)
     print("*Active days: ", days)
@@ -26,5 +26,5 @@ def ai_report():
     else:
         print("Spending is under control..")
     
-    print("---------------------")
+    print("----------------------------")
     
