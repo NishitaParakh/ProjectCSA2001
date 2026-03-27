@@ -43,7 +43,7 @@ while True:
         ai_report()
     elif (choose == 5):
         print("Thank You!.....Have a nice day!")
-        print("---------Exiting program---------")
+        print("--------- Exiting program ---------")
         break
     else:
         print("Invalid... Enter choice again..")

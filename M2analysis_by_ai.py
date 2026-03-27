@@ -10,7 +10,7 @@ def analyse_data():
 
     #Total and Category-wise Spending
     print("Total Spending:", sum_total)
-    print("Category-wise Spending:", cat_total)
+    print("Category-wise Spending:")
 
     for cat in cat_total.index:
         print(cat, ":", cat_total[cat])
