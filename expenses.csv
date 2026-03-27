@@ -1,1 +1,3 @@
-amount, category, date
+,Unnamed: 0,amount, category, date,Amount,Category,Date
+0,0.0,,,,200.0,Food,2026:03:27
+0,,,,,400.0,Education,2026:03:27
