@@ -11,11 +11,17 @@ def init_file():
 
 def add_expense(amount, category):
     df = pd.read_csv(file)
+    
+    df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
+
     date = datetime.now().strftime("%Y-%m-%d")
     new_data = {
         "Amount" : amount, 
         "Category" : category, 
         "Date" : date}
     new_df = pd.DataFrame([new_data])
-    df = pd.concat([df, new_df], ignore_index = True)
+    if df.empty:
+        df = new_df
+    else:
+        df = pd.concat([df, new_df], ignore_index = True)
     df.to_csv(file, index = "False")
