@@ -1,7 +1,9 @@
 import pandas as pd
+import os
 
+file = os.path.join(os.path.dirname(__file__), "expenses.csv")
 def time_analyzer():
-    df = pd.read_csv("expenses.csv")
+    df = pd.read_csv(file)
     df['Date'] = pd.to_datetime(df['Date'])
 
     print("\n---------DAILY SPENDING----------")
